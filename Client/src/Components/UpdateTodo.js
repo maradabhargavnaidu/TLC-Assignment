@@ -41,6 +41,7 @@ const UpdateTodo = () => {
         Date,
       }),
     });
+    Navigate("/");
     // .then((res) => res.json())
     // .then((response) => console.log("Success:", response))
     // .catch((error) => console.error("Error:", error));

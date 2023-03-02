@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Todo from "./Todo.tsx";
+import Todo from "./Todo.js";
 
 const TodoList = () => {
   const Navigate = useNavigate();
@@ -25,7 +25,20 @@ const TodoList = () => {
       .then((data) => setData(data))
       .catch((err) => console.log(err));
   }
-
+  //CheckBox
+  const check = async (_id) => {
+    console.log(_id);
+    const data = await fetch("http://localhost:5000/addtodo", {
+      method: "DELETE",
+      body: JSON.stringify({ _id }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((response) => console.log("Success:", response))
+      .catch((error) => console.error("Error:", error));
+  };
   //delete
   const del = async (_id) => {
     console.log(_id);
@@ -52,9 +65,6 @@ const TodoList = () => {
       <div className="List">
         <table>
           <tr className="display-flex bg">
-            <th className="item1">
-              <i class="fa-solid fa-list"></i>
-            </th>
             <th className="item2">
               <i class="fa-solid fa-quote-right"></i>
             </th>
@@ -84,6 +94,7 @@ const TodoList = () => {
               Date={e.Date}
               Delete={() => del(e._id)}
               Update={() => update(e._id)}
+              Checked={() => check(e._id)}
             />
           ))}
         </table>
