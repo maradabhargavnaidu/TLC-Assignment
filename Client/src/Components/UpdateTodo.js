@@ -7,6 +7,7 @@ const UpdateTodo = () => {
   const [data, setData] = useState({});
   const [Date, setDate] = useState();
   const { Id } = useParams();
+
   function fetchData() {
     fetch("http://localhost:5000/getTodo/" + Id, { method: "GET" })
       .then((res) => res.json())

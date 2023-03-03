@@ -16,7 +16,7 @@ router.post("/addtodo", addTodo);
 router.post("/updatetodo", updateTodo);
 //delete
 router.delete("/addtodo", deleteTodo);
-
+//params
 router.get("/getTodo/:Id", getTodo);
 
 module.exports = router;
