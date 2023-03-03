@@ -6,6 +6,9 @@ const Todo = (props) => {
         type="checkbox"
         className="item1 click"
         onClick={props.Checked}
+        onChange={() => {
+          console.log(props._id);
+        }}
         htmlFor="title"
       />
       <td className="item2 center" name="title">

@@ -13,7 +13,7 @@ const AddTodo = () => {
   //Getting Date
   useEffect(() => {
     var date = new window.Date();
-    setDate(date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear());
+    setDate(date.getDate() + "-" + date.getMonth() + "-" + date.getFullYear());
   }, []);
   //Back
   const back = () => {

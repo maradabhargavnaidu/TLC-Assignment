@@ -190,9 +190,6 @@ input {
   color: #fffdd0;
 }
 
-input[type="checkbox"]:checked + td.strikethrough {
-  text-decoration: line-through;
-}
 .gradient {
   background-color: #fffdd0;
   margin-top: 10px;

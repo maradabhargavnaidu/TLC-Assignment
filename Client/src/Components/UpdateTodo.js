@@ -16,7 +16,7 @@ const UpdateTodo = () => {
   useEffect(() => {
     fetchData();
     var date = new window.Date();
-    setDate(date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear());
+    setDate(date.getDate() + "-" + date.getMonth() + "-" + date.getFullYear());
   }, []);
 
   //Back
