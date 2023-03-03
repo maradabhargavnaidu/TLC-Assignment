@@ -17,4 +17,20 @@
 
 # WALKTHROUGH
 
-- <img src="/images/newtodo.png">
+- Adding Todo
+  <img src="/images/newtodo.png">
+
+- Todo List
+  <img src="/images/todolist.png">
+
+- Update Todo
+  <img src="/images/updatetodo.png">
+
+- API
+  <img src="/images/api.png">
+
+- MongoDB DataBase
+  <img src="/images/database.png">
+
+- Terminal Output of deleting and updating data
+  <img src="/images/terminal.png">
