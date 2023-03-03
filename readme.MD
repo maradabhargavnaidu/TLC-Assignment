@@ -10,11 +10,11 @@
 
 ## TECH STACK
 
-    - ReactJS
-    - MongoDB
-    - ExpressJS
-    - NodeJS
+- ReactJS
+- MongoDB
+- ExpressJS
+- NodeJS
 
 # WALKTHROUGH
 
-- ![add_todo]("/images/newtodo.png")
+- <img src="/images/newtodo.png">
